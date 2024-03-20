@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+footer{
+	padding: 1 em 0;
+	text-align: center;
+	margin-top: auto;
+}
+body {
+	background-image: url(img/man-2179313_1920.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 700px;
+	background-size: cover;s
+    background-position: center;
+	display: flex;
+	flex-direction: column;
+	min-heigth: 100 vh;
+	
+}
+header {
+	width: 100%;
+}
+header nav {
+	width: 90%;
+	max-width: 1000px;
+	margin-top: 0px;
+	margin: 20px auto;
+	background: #6e53e5;
+	border-radius: 50px;
+}
+.menu_bar {
+	display: none; /*desaparecemos la palabra menu*/
+}
+header nav ul {
+	overflow: hidden; /*Hacemos que el menú no este en linea con el texto*/
+	list-style: none;
+}
+header nav ul li {
+	float: left;
+}
+header nav ul li a {
+	color: #fff;
+	padding: 20px;
+	display: block;
+	text-decoration: none;
+}
+header nav ul li span {
+	margin-right: 10px;
+}
+header nav ul li a:hover {
+	background: #f72585;
+	border-radius: 50px;
+}
+ section {
+ 	padding: 20px;
+ }
+@media screen and (max-width: 900px) {
+	header nav {
+		width: 50%;
+		height: 100%;
+		left: -100%;
+		margin: 0;
+		position: fixed; /*se mantendrá en el mismo lugar incluso al hacer scroll*/
+		border-radius: 0px;
+	}
+	header nav ul li {
+		display: block;
+		float: none;
+		border-bottom: 1px solid #ffffff55;
+	}
+	.menu_bar {
+		display: block;
+		width: 100%;
+		background: #ccc; 
+	}
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		background: #fb6f92;
+		color: #fff;
+		font-weight: bold;
+		text-decoration: none;
+		font-size: 25px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+}
+
